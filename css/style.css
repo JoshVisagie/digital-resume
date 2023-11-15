@@ -54,7 +54,7 @@ h3{
    
     position: sticky;
     top: 0;
-   
+   width: 100%;
    display:flex;
     justify-content: space-around; 
 
@@ -138,10 +138,40 @@ grid-template-columns: repeat(1, 1fr);
 }
 
 .logo-software{
-
+  border-radius: 50;
+  background-color: white;
   max-width: 100px;
+  border-radius: 30%;
   
 }
+
+.software{
+
+  display: grid;
+  gap:50px;
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.socials{
+  background-color: aliceblue;
+  width: 100%;
+  margin:0;
+  position: fixed;
+  bottom:0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact{
+  background-color: aliceblue;
+  padding-left:50px;
+  color: #1c618c;
+  width: 100%;
+ padding-bottom: 50px;
+
+}
+
 @media (min-width: 768px)
 {
   .content{
@@ -149,6 +179,14 @@ grid-template-columns: repeat(1, 1fr);
     display: grid ;
     gap: 50px;
     grid-template-columns: repeat(2, 1fr);
+    }
+
+    .software{
+
+      display: grid;
+      gap:50px;
+      grid-template-columns: repeat(4, 1fr);
+    
     }
 
 }
