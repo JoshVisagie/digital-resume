@@ -48,10 +48,11 @@
        
 
     </div>
-    <div>
-        <img src="/images/design-josh.png" alt="Codespace Logo" class="splash">
-
-    </div>
+    <picture>  
+        <source srcset="/images/design-josh-small.png" media="(max-width: 425px)">
+        <source srcset="/images/design-josh-medium.png" media="(max-width: 768px)">
+        <img src="/images/design-josh.png" alt="Splash" class="splash">
+      </picture>
 
     <div id="experience">
         <h2>Experience</h2>
@@ -262,14 +263,22 @@
         <h2>Skills</h2>
         <h3> Proficient Software</h3>
         <main class="software">
-            <img src="/images/app-classin.png" alt="classin Logo" class="logo-software">
-            <img src="/images/app-excell.jpg" alt="Excell Logo" class="logo-software"> 
-            <img src="/images/app-illustrator.png" alt="Illustrator Logo" class="logo-software"> 
-            <img src="/images/app-photoshop.png " alt="photoshop Logo" class="logo-software"> 
-            <img src="/images/app-premierpro.png" alt="premier Logo" class="logo-software">     
-            <img src="/images/app-procreate.png" alt="procreate Logo" class="logo-software"> 
-            <img src="/images/app-qb.png" alt="quickbooks Logo" class="logo-software"> 
-            <img src="/images/app-wordlogo.png" alt="word Logo" class="logo-software"> 
+            <div class="logo-grid-item-1"><img src="/images/app-classin.png" alt="classin Logo" class="logo-software"></div>
+            <div class="logo-grid-item-2"><img src="/images/app-excell.jpg" alt="Excell Logo" class="logo-software"></div>
+            <div class="logo-grid-item-3"><img src="/images/app-illustrator.png" alt="Illustrator Logo" class="logo-software"> </div>
+            <div class="logo-grid-item-4"><img src="/images/app-photoshop.png " alt="photoshop Logo" class="logo-software"></div>
+            <div class="logo-grid-item-5"><img src="/images/app-premierpro.png" alt="premier Logo" class="logo-software"> </div>
+            <div class="logo-grid-item-6"><img src="/images/app-procreate.png" alt="procreate Logo" class="logo-software"></div>
+            <div class="logo-grid-item-7"><img src="/images/app-qb.png" alt="github Logo" class="logo-software"></div>
+            <div class="logo-grid-item-8"><img src="/images/app-wordlogo.png" alt="word Logo" class="logo-software"> </div>
+            
+             
+            
+             
+                
+             
+             
+            
 
         </main>
     </div>
@@ -280,66 +289,55 @@
 </section>
 
 <div id="contact">
-    <h2>Contact</h2g>
+    <h2>Contact</h2>
 
      
     
     <form action="https://formsubmit.co/joshvisagie@gmail.com" method="POST">
 
-     
-        <div>
-        
-          <label for="email">Email</label>
-         <input type="email" name="email" id="email" placeholder="exapmple@gmail.com" required>
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <input type="hidden" name="_subject" value="Joshua Visagie Resumé Contact">
+        <input type="hidden" name="_captcha" value="false">
+       <div class="form-grid">
 
-        </div>
-
-        <div>
-
-          <h3 id="Reason">Reason</h3>
-
-          <div>
+        <div id="fname-form">
+            <label for="firstname">First name:</label><br>
+            <input type="text" id="firstname" name="firstname" required placeholder="First name"><br>
             
-            <input type="radio" name="Reason" id="teaching" required>
-            <label for="teaching">Teaching</label>
-
-          </div>
-         
-          <div>
+        </div>
+        <div id="lname-form">
            
-            <input type="radio" name="Reason" id="Art" required>
-            <label for="Art">Art</label>
-
-          </div>
-
-          <div>
-            
-            <input type="radio" name="Reason" id="Programming" required>
-            <label for="Programming">Programming</label>
-
-            <br> 
-            
-
-          </div>
-
-
-          <div>
-            <h3>Message</h3>
-            <div>
-              <Textarea id="message" name="message" placeholder="What would you like to tell me"> </Textarea>
-            </div>
-            
-
-          </div>
-
-
+            <label for="lastname">Last name:</label><br>
+            <input type="text" id="lastname" name="lastname" required placeholder="Last Name">
         </div>
 
+        <div id="email-form">
+        <label for="email">Email</label><br>
+         <input type="email" name=email id="email" placeholder="exapmple@gmail.com" required>
+        </div>
+        <div id="phone-form">
+            <label for="phone-no">Phone number:</label><br>
+            <input type="tel" id="phone-no" name="phone-no" >
+        </div>
+        <div id="reason-form">
+            <label for="reason">Regarding:</label><br>
+            <select name="reason" id="reason">
+                <option value="Teaching">Teaching</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Programming">Programming</option>
+              </select> 
+        </div>
+        
+          <div id="message-form">
+            <label for="message">Message for me:</label><br>
+              <Textarea id="message" name="message"> </Textarea>
+          </div>
 
-        <button type="reset">Reset</button>
-        <button type="submit" value="send">Submit</button>
+        
+    </div>
+    <button type="reset">Reset</button>
+    <button type="submit" value="send">Submit</button>
        
-
       </form>
 </div>
 
